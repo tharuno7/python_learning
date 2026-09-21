@@ -14,9 +14,9 @@ num1 = 10
 n2m = 20 
 n_m = 30
 _num4 = 40
-3num = 30 
-n@m = 40 
-for = 30
+# 3num = 30 
+# n@m = 40 
+# for = 30
 a = 30 
 A = 20
 print(a) #output: 30
