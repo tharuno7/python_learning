@@ -117,4 +117,8 @@ print(s.split())        # []
 a = [1,2,3,4]
 b = ['1', '2', '3']
 print('@'.join(a))     # TypeError
+<<<<<<< HEAD
 print('@'.join(b))     # 1@2@3
+=======
+print('@'.join(b))     # 1@2@3
+>>>>>>> cc39f00 (day05.py)
