@@ -107,15 +107,77 @@
 #         print(i)
 #     i+=1
 #print numbers divisible by both 5 and 7 from 1 to 500 
-n=500
-i=1
-while i<n:
-    if i%5==0 and i%7==0:
-        print(i,end=" ")
-    i+=1
+# n=500
+# i=1
+# while i<n:
+#     if i%5==0 and i%7==0:
+#         print(i,end=" ")  #35 70 105 140 175 210 245 280 315 350 385 420 455 490 
+#     i+=1
 #interview problems
 #count digits
+# n=int(input("enter num:"))
+# count=0
+# for i in str(n):
+#     count+=1
+# print(count)
+# print()
+# # in while loop
+# n= int(input("enter num:"))
+# count=0
+# while n>0:
+#     n=n//10
+#     count+=1
+# print("count of digit:",count)
+# print()
+# #count digit in string
+# n=input("enter string:")
+# count=0
+# for i in n:
+#     if i>='0' and i<='9':
+#         count+=1
+# print(count)
+
 #reverse a number
-#palindrome number 
-#palindrome string (without slicing, built in function)
+# n=int(input("enter num:"))
+# rev=0
+# while n>0:
+#     digit=n%10
+#     rev=rev*10+digit
+#     n//=10
+# print(rev)
+# palindrome number 
+# n=int(input("enter num:"))
+# original=n
+# rev=0
+# while n>0:
+#     digit=n%10
+#     rev=rev*10+digit
+#     n//=10
+# if original==rev:
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+
+# #palindrome string (without slicing, built in function)
+# n=input("enter string:")
+# for i in range(len(n)-1,-1,-1):
+#     print(n[i],end=" ")
+
 #armstrong number
+n=int(input("enter num:"))
+temp=n
+count=0
+while temp>0:
+    count+=1
+    temp//=10
+temp=n
+sum=0
+while temp>0:
+    digit=temp%10
+    sum=sum+digit**count
+    temp//=10
+
+if sum==n:
+    print("armstrong num")
+else:
+    print("not armstrong num")
